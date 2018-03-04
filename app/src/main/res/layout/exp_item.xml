@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/dialoganim">
+
+        <LinearLayout
+            android:id="@+id/contentPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/onezero"
+            android:layout_marginRight="@dimen/onezero"
+            android:layout_marginTop="@dimen/onethree"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/five"
+            android:paddingTop="@dimen/twozero">
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/two"
+                android:hint="Job Title"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/five"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/graydark" />
+
+            <EditText
+                android:id="@+id/et_cmp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/two"
+                android:hint="Company"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/five"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/graydark" />
+
+            <LinearLayout
+                android:id="@+id/ll_std_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/et_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/two"
+                    android:hint="City"
+                    android:inputType="text"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:paddingLeft="@dimen/five"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/graydark" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <EditText
+                    android:id="@+id/et_fromdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/two"
+                    android:layout_weight="1"
+                    android:hint="From Date"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="@dimen/five"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/graydark" />
+
+
+                <EditText
+                    android:id="@+id/et_todate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/two"
+                    android:layout_weight="1"
+                    android:hint="To Date"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="@dimen/five"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/graydark" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_jobdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/two"
+                android:gravity="top"
+                android:hint="Job Description"
+                android:inputType="textMultiLine"
+                android:maxHeight="@dimen/sevenfive"
+                android:maxLines="4"
+                android:nestedScrollingEnabled="false"
+                android:paddingLeft="@dimen/five"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/graydark" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/threezero"
+            android:layout_height="@dimen/threezero"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/close" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/two"
+            android:layout_marginTop="@dimen/onesix"
+            android:background="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

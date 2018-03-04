@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_company_profile"
+                android:layout_width="@dimen/ninezero"
+                android:layout_height="@dimen/ninezero"
+                android:layout_marginTop="@dimen/onefive"
+                android:src="@drawable/profile"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="1dp" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/onefive">
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/onetwo"
+                    android:layout_marginLeft="@dimen/onetwo"
+                    android:layout_marginRight="@dimen/onefive"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_uname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/twofive"
+                            android:layout_height="@dimen/twofive"
+                            android:src="@drawable/company" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/et_company_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/two"
+                                android:hint="Company Name"
+                                android:inputType="textEmailAddress"
+                                android:paddingLeft="@dimen/five"
+                                android:textColor="@color/colorPrimary" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/twofive"
+                            android:layout_height="@dimen/twofive"
+                            android:src="@drawable/email" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/et_company_emial"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/two"
+                                android:hint="Email"
+                                android:inputType="textEmailAddress"
+                                android:paddingLeft="@dimen/five"
+                                android:textColor="@color/colorPrimary" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/twofive"
+                            android:layout_height="@dimen/twofive"
+                            android:src="@drawable/phone" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/et_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/two"
+                                android:hint="Phone"
+                                android:inputType="textPassword"
+                                android:paddingLeft="@dimen/five"
+                                android:textColor="@color/colorPrimary" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/twofive"
+                            android:layout_height="@dimen/threezero"
+                            android:src="@drawable/loc" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/et_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/two"
+                                android:hint="Address"
+                                android:inputType="text"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:paddingLeft="@dimen/five"
+                                android:textColor="@color/colorPrimary" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_area_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/twofive"
+                            android:layout_height="@dimen/threezero"
+                            android:src="@drawable/loc" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_area_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/et_area_code"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/two"
+                                android:hint="Area Code"
+                                android:inputType="text"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:paddingLeft="@dimen/five"
+                                android:textColor="@color/colorPrimary" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/onezero"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/two"
+                            android:text="@string/about_company"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/onesix" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/onefivezero"
+                                android:layout_marginLeft="@dimen/two"
+                                android:background="@drawable/border_full"
+                                android:gravity="start"
+                                android:inputType="text"
+                                android:paddingLeft="@dimen/five"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/colorPrimary" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Spinner
+
+                            android:id="@+id/spinner_types_of_company"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <Button
+                    android:id="@+id/btn_company_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_post_job"
+                    android:layout_marginTop="@dimen/twofive"
+                    android:background="@drawable/btnfill"
+                    android:padding="@dimen/five"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twozero" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/five"
+                    android:id="@+id/tv_job_title"
+                    android:text="android devloper"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/oneeight" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/five"
+                    android:id="@+id/tv_company_name"
+                    android:text="marwadi education foundation group of institution faculty of architecture"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/onefour" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/five"
+                    android:id="@+id/tv_sallery"
+                    android:text="Rs.10000 - Rs. 20000 a year"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.50dp"
+                android:background="@color/graylight"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/five"
+                    android:id="@+id/tv_job_des"
+                    android:text="
+Hello aspiring candidates,\n\nWhat We're Looking For is a solid foundation in computer science, Willingness and ability to take up independent projects and execute them under the supervision of our team.\nExperience with Android Studio. Enthusiasm to learn and use new languages. Keen problem-solving skills and the ability to analyze and attack a problem from all angles.\nRequired Qualities:\nRequired experience of 1-2 years in Android development.\n
+\n*Bonus points if you've previously worked with a startup or tried to startup yourself.
+\n*Should be able to manage project implementation end to end.
+\n*Willing to work in a startup environment.
+\n*Excellent communication skills.
+\n\nEmail your resumes at manish @quensoft.com or contact us at 7874664323"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/five"
+                    android:text="Required education:"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/five"
+                    android:paddingEnd="@dimen/five"
+                    android:paddingLeft="@dimen/oneeight"
+                    android:text="B.E."
+                    android:id="@+id/tv_require_education"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/five"
+                    android:text="Required experince:"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/five"
+                    android:paddingEnd="@dimen/five"
+                    android:paddingLeft="@dimen/oneeight"
+                    android:id="@+id/tv_require_exp"
+                    android:text="Android devloper: 1 year"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/five"
+                    android:text="2 days ago"
+                    android:id="@+id/tv_days_of_post"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/onefive"
+                android:layout_marginRight="@dimen/onefive">
+
+                <Button
+                    android:id="@+id/btn_apply_for_job"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll"
+                    android:layout_marginTop="@dimen/twofive"
+                    android:background="@drawable/btnfill"
+                    android:padding="@dimen/five"
+                    android:text="Apply Now"
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twozero" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/onefive"
+                android:layout_marginRight="@dimen/onefive">
+
+                <Button
+                    android:id="@+id/btn_save_job"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll"
+                    android:layout_marginTop="@dimen/twofive"
+                    android:background="@drawable/btnfill"
+                    android:padding="@dimen/five"
+                    android:text="Save Job"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twozero" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/onefive"
+                android:layout_marginRight="@dimen/onefive">
+
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll"
+                    android:layout_marginBottom="@dimen/twozero"
+                    android:layout_marginTop="@dimen/twofive"
+                    android:background="@drawable/btncor"
+                    android:padding="@dimen/five"
+                    android:text="Report!"
+                    android:id="@+id/btn_report_job"
+                    android:textAllCaps="false"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/twozero" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/dialoganim">
+
+        <LinearLayout
+            android:id="@+id/contentPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/five"
+            android:paddingTop="@dimen/twozero">
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/two"
+                android:hint="Job Title"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/five"
+                android:textColor="@color/white"
+                android:textColorHint="@color/graydark" />
+
+            <EditText
+                android:id="@+id/et_cmp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/two"
+                android:hint="Company"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/five"
+                android:textColor="@color/white"
+                android:textColorHint="@color/graydark" />
+
+            <LinearLayout
+                android:id="@+id/ll_std_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/et_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/two"
+                    android:hint="City"
+                    android:inputType="text"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:paddingLeft="@dimen/five"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/graydark" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2">
+                <Spinner
+                    android:id="@+id/sp_fmonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/seven"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="@dimen/five"
+                    android:textAlignment="center"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/sp_fyear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:layout_marginRight="@dimen/seven"
+                    android:background="@drawable/border"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To"
+                android:layout_gravity="center"
+                android:padding="@dimen/two"
+                android:textColor="@color/white"
+                android:textSize="@dimen/onefive"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/five"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <Spinner
+                    android:id="@+id/sp_tmonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/seven"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="@dimen/five"
+                    android:textAlignment="center"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/sp_tyear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/seven" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_jobdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/two"
+                android:gravity="top"
+                android:layout_marginTop="@dimen/seven"
+                android:hint="Job Description"
+                android:inputType="textMultiLine"
+                android:maxHeight="@dimen/sevenfive"
+                android:maxLines="4"
+                android:nestedScrollingEnabled="false"
+                android:paddingLeft="@dimen/five"
+                android:textColor="@color/white"
+                android:textColorHint="@color/graydark" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/two"
+            android:layout_marginTop="@dimen/onesix"
+            android:background="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>
